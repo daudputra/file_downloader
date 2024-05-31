@@ -1,4 +1,4 @@
-from tools.save_json.save import save_json
+# from tools.save_json.save import save_json
 import scrapy
 import requests
 import os
@@ -49,7 +49,7 @@ class FiledownloaderSpider(scrapy.Spider):
             'crawling_time_epoch' : int(datetime.now().timestamp()),
             'file_name' : file_names,
         }
-        save_json(data, os.path.join(dir_raw, filename_json))
+        # save_json(data, os.path.join(dir_raw, filename_json))
         
         for link in self.start_urls:
             self.download_file(link)
