@@ -10,7 +10,7 @@ start_urls = [
  Enter your user agent (Optional)
 ``` bash
 headers = {
-  'User-Agent' : '#####'
+  'User-Agent' : Your User Agent
 }
 ```
 
